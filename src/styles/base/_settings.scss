@@ -2,17 +2,8 @@
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  @media screen and (max-width: 474.9px) and (min-device-height: 765px) {
-    font-size: 11.2px;
-  }
-  @media screen and (max-width: 474.9px) and (min-device-height: 895px) {
-    font-size: 12px;
-  }
   @include tablet-s {
     font-size: 13px;
-    @media screen and (min-device-height: 925px) {
-      font-size: 15.5px;
-    }
   }
   @include tablet {
     font-size: 20px;

@@ -1,9 +1,6 @@
 header {
   @include flexbox-center(space-between);
   @include margin-page($mrgn-mbl, $mrgn-mbl, $mrgn-mbl);
-  @media screen and (min-device-height: 925px) {
-    font-size: 15.5px;
-  }
   @include desktop-s {
     @include margin-page($mrgn-mbl, $mrgn-dsktp, $mrgn-dsktp-s);
   }
@@ -16,9 +13,6 @@ header {
   .logo {
     width: 14.5rem;
     height: 4.7rem;
-    @media screen and (min-device-height: 925px) {
-      width: 12rem;
-    }
   }
   nav {
     width: 13rem;
@@ -27,9 +21,6 @@ header {
     align-items: center;
     @include tablet-s {
       width: 14rem;
-      @media screen and (min-device-height: 925px) {
-        width: 11rem;
-      }
     }
   }
   ul {

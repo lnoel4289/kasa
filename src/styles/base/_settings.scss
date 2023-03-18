@@ -1,0 +1,55 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  @media screen and (max-width: 474.9px) and (min-device-height: 765px) {
+    font-size: 11.2px;
+  }
+  @media screen and (max-width: 474.9px) and (min-device-height: 895px) {
+    font-size: 12px;
+  }
+  @include tablet-s {
+    font-size: 13px;
+    @media screen and (min-device-height: 925px) {
+      font-size: 15.5px;
+    }
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop-s {
+    font-size: 10px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+  @include desktop-l {
+    font-size: 17px;
+  }
+  @include desktop-xl {
+    font-size: 27px;
+  }
+}
+
+body {
+  font-size: 1.2rem;
+  @include desktop-s {
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    font-size: 1.2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

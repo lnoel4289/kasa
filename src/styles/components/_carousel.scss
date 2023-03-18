@@ -1,0 +1,80 @@
+.carousel {
+  overflow: hidden;
+  height: 25.5rem;
+  border-radius: 1rem;
+  position: relative;
+  @include desktop-s {
+    height: 40rem;
+  }
+  @include desktop {
+    height: 21rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .arrow-container {
+    @include flexbox-center;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: absolute;
+    top: 11rem;
+    border-radius: 50%;
+    @include desktop-s {
+      height: 80px;
+      width: 80px;
+      top: 40%;
+    }
+    @include desktop-l {
+      height: 100px;
+      width: 100px;
+      top: 42%;
+    }
+    &__right {
+      right: 0;
+    }
+    &__left {
+      transform: rotate(180deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $color-tertiary;
+      opacity: 0;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    &:active {
+      &::after {
+        opacity: 0.5;
+      }
+    }
+    @include desktop-s {
+      &:hover {
+        &::after {
+          opacity: 0.5;
+          transition: opacity 250ms;
+        }
+      }
+    }
+  }
+  .arrow {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: white;
+    z-index: 1;
+    @include desktop-s {
+      height: 80px;
+      width: 80px;
+    }
+    @include desktop-l {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.error {
+  @include margin-page(20rem, 0, 20rem);
+  text-align: center;
+  color: $color-primary;
+  @include desktop {
+    margin: 0;
+  }
+  h1 {
+    font-size: 9.6rem;
+    font-weight: 700;
+    @include desktop {
+      font-size: 14rem;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    font-weight: 500;
+    @include desktop {
+      font-size:.9rem;
+    }
+  }
+  .to-homepage {
+    margin: 9rem 0;
+  }
+}

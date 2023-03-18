@@ -1,0 +1,62 @@
+header {
+  @include flexbox-center(space-between);
+  @include margin-page($mrgn-mbl, $mrgn-mbl, $mrgn-mbl);
+  @media screen and (min-device-height: 925px) {
+    font-size: 15.5px;
+  }
+  @include desktop-s {
+    @include margin-page($mrgn-mbl, $mrgn-dsktp, $mrgn-dsktp-s);
+  }
+  @include desktop {
+    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l);
+  }
+  .nav-active {
+    text-decoration: underline;
+  }
+  .logo {
+    width: 14.5rem;
+    height: 4.7rem;
+    @media screen and (min-device-height: 925px) {
+      width: 12rem;
+    }
+  }
+  nav {
+    width: 13rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    @include tablet-s {
+      width: 14rem;
+      @media screen and (min-device-height: 925px) {
+        width: 11rem;
+      }
+    }
+  }
+  ul {
+    @include flexbox-center(space-between);
+    margin: 0;
+    width: 100%;
+    height: 4.7rem;
+    @include mobile-s {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    li {
+      @include mobile-s {
+        @include flexbox-center(flex-end);
+      }
+    }
+  }
+  a {
+    font-weight: 500;
+    color: $color-primary;
+    text-transform: uppercase;
+    @include desktop-s {
+      text-transform: unset;
+    }
+    @include desktop {
+      font-size: 1.2rem;
+    }
+  }
+}

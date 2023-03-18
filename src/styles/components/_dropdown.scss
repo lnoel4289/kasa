@@ -1,0 +1,53 @@
+.dropdown {
+  margin-bottom: $mrgn-mbl;
+  @include desktop-s {
+    margin-bottom: $mrgn-dsktp-s;
+  }
+  .dropButton {
+    @include flexbox-center(space-between);
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 0 1.15rem;
+    position: relative;
+    font-weight: 500;
+    @include desktop-s {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .arrow-container {
+      height: 100%;
+      &-up {
+        transform: rotate(180deg);
+      }
+      .arrow {
+        transform: rotate(-90deg);
+        height: 1.9rem;
+        width: 1.9rem;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    top: -1.15rem;
+    border-radius: 0.5rem;
+    text-align: start;
+    padding: 2.3rem 0.7rem 0 1.15rem;
+    background-color: $color-secondary;
+    color: $color-primary;
+    line-height: 1.71rem;
+    z-index: -1;
+  }
+}
+
+.arrow {
+  width: 0.9rem;
+  height: 1.5rem;
+  fill: white;
+}

@@ -1,0 +1,19 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include desktop-s {
+    padding: $mrgn-dsktp-s $mrgn-dsktp-s 0;
+    border-radius: 1rem;
+    background-color: $color-secondary;
+    margin-bottom: $mrgn-dsktp-s;
+  }
+  @include desktop {
+    justify-content: unset;
+    padding: $mrgn-pdng $mrgn-pdng 0;
+  }
+  @include desktop-l {
+    justify-content: unset;
+    padding: 3rem 3rem 0;
+  }
+}

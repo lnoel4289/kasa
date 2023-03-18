@@ -1,0 +1,6 @@
+.dropdowns {
+  @include desktop-s {
+    padding: 0 $mrgn-dsktp;
+    margin-bottom: 10rem;
+  }
+}

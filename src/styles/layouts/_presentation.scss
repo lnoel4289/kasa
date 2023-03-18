@@ -1,0 +1,41 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  @include desktop-s {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1 {
+    color: $color-primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.56rem;
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+  h2 {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    @include desktop {
+      font-size: .9rem;
+      margin-top: 0
+    }
+  }
+  .host-rating-cont {
+    @include flexbox-center(space-between);
+    margin-bottom: 1.6rem;
+    @include desktop-s {
+      margin-top: 1.6rem;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

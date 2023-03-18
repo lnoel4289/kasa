@@ -1,0 +1,12 @@
+.rating {
+  .star {
+    width: 1.7rem;
+    height: 1.7rem;
+    &-color-primary {
+      fill: $color-primary;
+    }
+    &-color-tertiary {
+      fill: $color-tertiary;
+    }
+  }
+}

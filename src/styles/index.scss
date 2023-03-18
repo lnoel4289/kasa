@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/settings";
+
+@import "./pages/home";
+@import "./pages/error";
+@import "./pages/dwelling";
+@import "./pages/about";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/presentation";
+@import "./layouts/dropdowns";
+
+@import "./components/banner";
+@import "./components/gallery";
+@import "./components/dwellingCard";
+@import "./components/carousel";
+@import "./components/dropdown";
+@import "./components/rating";
+@import "./components/host";
+@import "./components/tag";

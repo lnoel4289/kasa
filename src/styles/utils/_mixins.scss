@@ -1,0 +1,60 @@
+// RESPONSIVE MIXINS
+@mixin desktop-xl {
+  @media screen and (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin desktop-l {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop-s {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-s {
+  @media screen and (min-width: 475px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 350px) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media screen and (max-width: 349px) {
+    @content;
+  }
+}
+
+// OTHER MIXINS
+
+@mixin flexbox-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin margin-page($up: $mrgn-mbl, $sides: $mrgn-mbl, $down: 0) {
+  margin: $up $sides $down;
+}

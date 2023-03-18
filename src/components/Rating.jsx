@@ -10,9 +10,9 @@ const Rating = ({ rating }) => {
         <MdStarRate
           key={num}
           className={
-            num <= rating
-              ? "star star-color-primary"
-              : "star star-color-tertiary"
+            num > rating
+              ? "star star-color-tertiary"
+              : "star star-color-primary"
           }
         />
       ))}

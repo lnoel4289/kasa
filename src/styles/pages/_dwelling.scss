@@ -1,11 +1,5 @@
 .dwelling {
   @include margin-page;
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp);
-  }
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l, $mrgn-dsktp-s);
-  }
   &__dropdowns {
     @include desktop {
       display: flex;

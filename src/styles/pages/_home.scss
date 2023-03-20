@@ -1,12 +1,6 @@
 .home {
   @include margin-page;
   .imgContainer {
-    height: 11.1rem;
-  }
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp, $mrgn-dsktp-s);
-  }
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l);
+    height: 111px;
   }
 }

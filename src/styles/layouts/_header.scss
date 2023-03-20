@@ -1,12 +1,6 @@
 header {
   @include flexbox-center(space-between);
   @include margin-page($mrgn-mbl, $mrgn-mbl, $mrgn-mbl);
-  @include desktop {
-    @include margin-page($mrgn-mbl, $mrgn-dsktp, $mrgn-dsktp-s);
-  }
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l);
-  }
   .nav-active {
     text-decoration: underline;
   }

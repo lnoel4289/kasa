@@ -1,22 +1,10 @@
 .about {
   @include margin-page;
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
-  }
-  @include desktop {
-    @include margin-page(0, $mrgn-dsktp);
-  }
-  @include desktop {
-    @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l);
-  }
   .content {
     min-height: 14.3rem;
   }
   .imgContainer {
-    height: 22.3rem;
-    @include desktop {
-      height: $banner-hght;
-    }
+    height: 223px;
   }
   .heading-container {
     h1 {

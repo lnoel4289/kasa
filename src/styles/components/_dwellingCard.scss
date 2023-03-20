@@ -7,14 +7,13 @@
   mix-blend-mode: darken;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  
   @include tablet {
     width: calc(50% - $mrgn-dsktp-s/2);
     margin-bottom: $mrgn-dsktp-s;
   }
   @include desktop {
     width: 31%;
-    height: 34rem;
+    height: 340px;
     border-radius: 0.5rem;
     margin-right: $mrgn-card;
     margin-bottom: $mrgn-card;

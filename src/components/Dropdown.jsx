@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdArrowBackIos } from "react-icons/md";
 
 const Dropdown = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="dropdown">

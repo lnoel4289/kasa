@@ -2,7 +2,7 @@ import React from "react";
 
 const Indicator = ({ pictures, picture }) => {
   return (
-    <div>
+    <div className="indicator">
       {picture + 1}/{pictures.length}
     </div>
   );

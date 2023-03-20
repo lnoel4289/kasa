@@ -2,6 +2,9 @@
   .star {
     width: 1.7rem;
     height: 1.7rem;
+    @include tablet {
+      width: 30px;
+    }
     &-color-primary {
       fill: $color-primary;
     }

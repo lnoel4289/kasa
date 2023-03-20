@@ -1,0 +1,11 @@
+.indicator {
+  position: absolute;
+  bottom: 25px;
+  left: calc(50%);
+  color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  @include desktop {
+    color: $color-white;
+  }
+}

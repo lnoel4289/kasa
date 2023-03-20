@@ -12,6 +12,7 @@
     line-height: 2.56rem;
     @include desktop {
       margin-bottom: 0;
+      font-size: 36px;
     }
   }
   h2 {
@@ -20,7 +21,7 @@
     font-weight: 500;
     line-height: 2rem;
     @include desktop {
-      font-size: 0.9rem;
+      font-size: 18px;
       margin-top: 0;
     }
   }
@@ -32,6 +33,9 @@
       flex-direction: column-reverse;
       align-items: flex-end;
       justify-content: space-between;
+      h3 {
+        font-size: 18px;
+      }
     }
   }
   .tags {

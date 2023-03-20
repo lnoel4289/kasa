@@ -5,8 +5,12 @@ header {
     text-decoration: underline;
   }
   .logo {
-    width: 14.5em;
-    height: 4.7em;
+    width: 145px;
+    height: 47px;
+    @include tablet {
+      width: 210px;
+      height: 68px;
+    }
   }
   nav {
     width: 13rem;
@@ -28,7 +32,7 @@ header {
       text-transform: unset;
     }
     @include desktop {
-      font-size: 1.2rem;
+      font-size: 24px;
     }
   }
 }

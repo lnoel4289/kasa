@@ -1,5 +1,5 @@
 .home {
-  @include margin-page;
+  @include margin-page($sides:27px);
   .imgContainer {
     height: 111px;
   }

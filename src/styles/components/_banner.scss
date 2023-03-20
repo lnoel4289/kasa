@@ -2,7 +2,7 @@
   position: relative;
   h1 {
     width: 23.5rem;
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 500;
     color: $color-white;
     padding-left: 1.6rem;
@@ -10,17 +10,23 @@
       width: unset;
       padding-left: 0;
     }
+    @include tablet {
+      font-size: 36px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
   }
   .imgContainer {
     overflow: hidden;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
+    border-radius: 10px;
+    @include flexbox-center;
     mix-blend-mode: darken;
     background-color: $color-black;
     margin-bottom: $mrgn-mbl;
-    @include desktop {
-      margin-bottom: $mrgn-dsktp-s;
+    @include tablet {
+      height: 223px;
+      margin-bottom: 43px;
     }
     img {
       object-fit: cover;
@@ -37,6 +43,7 @@
     top: 0;
     left: 0;
     @include tablet {
+      height: 223px;
       justify-content: center;
     }
   }

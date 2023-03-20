@@ -8,22 +8,10 @@
 }
 
 body {
-  // font-size: 1.2em;
-  // @include desktop {
-  //   font-size: 1.5rem;
-  // }
-  // @include desktop {
-  //   font-size: 1.2rem;
-  // }
   @include desktop {
-    min-width: 1024px;
     max-width: 1240px;
     margin: auto;
   }
-  // @include desktop-l {
-  //   max-width: 1440px;
-    
-  // }
 }
 
 * {

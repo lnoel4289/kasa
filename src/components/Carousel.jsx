@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
+import Indicator from "./Indicator";
 
 const Carousel = ({ pictures, title }) => {
   const [picture, setPicture] = useState(0);
-
   return (
     <section className="carousel">
       {<img src={`${pictures[picture]}`} alt={`${title} ${picture + 1}`} />}
-      {
-/* CONDITIONAL RENDERING */
-      }
+      <Indicator pictures={pictures} picture={picture} />
       {pictures.length > 1 && (
         <div>
           <div
             className="arrow-container arrow-container__left"
-// EVENT
             onClick={() => {
               picture === 0
                 ? setPicture(pictures.length - 1)

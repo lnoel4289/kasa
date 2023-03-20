@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include desktop-s {
+  @include desktop {
     padding: $mrgn-dsktp-s $mrgn-dsktp-s 0;
     border-radius: 1rem;
     background-color: $color-secondary;

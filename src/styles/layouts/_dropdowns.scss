@@ -1,5 +1,5 @@
 .dropdowns {
-  @include desktop-s {
+  @include desktop {
     padding: 0 $mrgn-dsktp;
     margin-bottom: 10rem;
   }

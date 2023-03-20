@@ -3,7 +3,7 @@
   height: 25.5rem;
   border-radius: 1rem;
   position: relative;
-  @include desktop-s {
+  @include desktop {
     height: 40rem;
   }
   @include desktop {
@@ -21,7 +21,7 @@
     position: absolute;
     top: 11rem;
     border-radius: 50%;
-    @include desktop-s {
+    @include desktop {
       height: 80px;
       width: 80px;
       top: 40%;
@@ -54,7 +54,7 @@
         opacity: 0.5;
       }
     }
-    @include desktop-s {
+    @include desktop {
       &:hover {
         &::after {
           opacity: 0.5;
@@ -68,7 +68,7 @@
     width: 2.4rem;
     fill: white;
     z-index: 1;
-    @include desktop-s {
+    @include desktop {
       height: 80px;
       width: 80px;
     }

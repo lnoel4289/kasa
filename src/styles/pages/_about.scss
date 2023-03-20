@@ -1,9 +1,9 @@
 .about {
   @include margin-page;
-  @include desktop-s {
+  @include desktop {
     @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-s);
   }
-  @include desktop-s {
+  @include desktop {
     @include margin-page(0, $mrgn-dsktp);
   }
   @include desktop {
@@ -14,7 +14,7 @@
   }
   .imgContainer {
     height: 22.3rem;
-    @include desktop-s {
+    @include desktop {
       height: $banner-hght;
     }
   }

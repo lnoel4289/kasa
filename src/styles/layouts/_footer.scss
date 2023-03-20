@@ -21,7 +21,7 @@ footer {
     @include tablet {
       font-size: 0.7rem;
     }
-    @include desktop-s {
+    @include desktop {
       font-size: 1.2rem;
     }
   }

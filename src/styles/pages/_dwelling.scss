@@ -1,23 +1,23 @@
 .dwelling {
   @include margin-page;
-  @include desktop-s {
+  @include desktop {
     @include margin-page($mrgn-dsktp-s, $mrgn-dsktp);
   }
   @include desktop {
     @include margin-page($mrgn-dsktp-s, $mrgn-dsktp-l, $mrgn-dsktp-s);
   }
   &__dropdowns {
-    @include desktop-s {
+    @include desktop {
       display: flex;
       justify-content: space-between;
     }
     .dropdown {
-      @include desktop-s {
+      @include desktop {
         margin-bottom: $mrgn-dsktp-s;
         width: calc(50% - $mrgn-dsktp-s/2);
       }
       .content {
-        @include desktop-s {
+        @include desktop {
           height: 100%;
         }
       }

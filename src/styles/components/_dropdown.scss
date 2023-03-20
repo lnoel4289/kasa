@@ -1,6 +1,6 @@
 .dropdown {
   margin-bottom: $mrgn-mbl;
-  @include desktop-s {
+  @include desktop {
     margin-bottom: $mrgn-dsktp-s;
   }
   .dropButton {
@@ -12,7 +12,7 @@
     padding: 0 1.15rem;
     position: relative;
     font-weight: 500;
-    @include desktop-s {
+    @include desktop {
       &:hover {
         cursor: pointer;
       }

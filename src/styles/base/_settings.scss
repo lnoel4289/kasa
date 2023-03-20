@@ -2,13 +2,13 @@
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  @include tablet-s {
-    font-size: 13px;
-  }
+  // @include tablet-s {
+  //   font-size: 13px;
+  // }
   @include tablet {
     font-size: 20px;
   }
-  @include desktop-s {
+  @include desktop {
     font-size: 10px;
   }
   @include desktop {
@@ -18,7 +18,7 @@
 
 body {
   font-size: 1.2rem;
-  @include desktop-s {
+  @include desktop {
     font-size: 1.5rem;
   }
   @include desktop {

@@ -1,7 +1,7 @@
 .presentation {
   display: flex;
   flex-direction: column;
-  @include desktop-s {
+  @include desktop {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -20,14 +20,14 @@
     font-weight: 500;
     line-height: 2rem;
     @include desktop {
-      font-size: .9rem;
-      margin-top: 0
+      font-size: 0.9rem;
+      margin-top: 0;
     }
   }
   .host-rating-cont {
     @include flexbox-center(space-between);
     margin-bottom: 1.6rem;
-    @include desktop-s {
+    @include desktop {
       margin-top: 1.6rem;
       flex-direction: column-reverse;
       align-items: flex-end;

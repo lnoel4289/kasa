@@ -3,4 +3,7 @@
   .imgContainer {
     height: 111px;
   }
+  @include desktop {
+    @include margin-desktop;
+  }
 }

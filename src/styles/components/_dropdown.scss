@@ -12,6 +12,9 @@
     padding: 0 1.15rem;
     position: relative;
     font-weight: 500;
+    @include tablet {
+      font-size: 24px;
+    }
     @include desktop {
       &:hover {
         cursor: pointer;
@@ -20,9 +23,6 @@
     h2 {
       font-size: 1.3rem;
       font-weight: 500;
-      @include tablet {
-        font-size: 24px;
-      }
     }
     .arrow-container {
       height: 100%;

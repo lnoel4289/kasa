@@ -2,20 +2,23 @@
   @include margin-page(20rem, 0, 20rem);
   text-align: center;
   color: $color-primary;
-  @include desktop {
+  @include tablet {
     margin: 0;
   }
   h1 {
     font-size: 9.6rem;
     font-weight: 700;
     @include desktop {
-      font-size: 14rem;
-      margin-bottom: 0;
+      font-size: 288px;
+      margin: 137px 0 0;
     }
   }
   p {
     font-size: 1.8rem;
     font-weight: 500;
+    @include desktop {
+      font-size: 36px;
+    }
   }
   a {
     color: $color-primary;
@@ -28,5 +31,9 @@
   }
   .to-homepage {
     margin: 9rem 0;
+    @include desktop {
+      font-size: 18px;
+      margin: 90px 0;
+    }
   }
 }

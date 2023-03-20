@@ -1,5 +1,8 @@
 .dwelling {
   @include margin-page;
+  @include desktop {
+    @include margin-desktop;
+  }
   &__dropdowns {
     @include desktop {
       display: flex;

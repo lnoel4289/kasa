@@ -14,12 +14,6 @@
   @include desktop {
     font-size: 18px;
   }
-  @include desktop-l {
-    font-size: 17px;
-  }
-  @include desktop-xl {
-    font-size: 27px;
-  }
 }
 
 body {
@@ -29,6 +23,10 @@ body {
   }
   @include desktop {
     font-size: 1.2rem;
+  }
+  @include desktop-l {
+    max-width: 1440px;
+    margin: auto;
   }
 }
 

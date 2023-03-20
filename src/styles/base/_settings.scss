@@ -2,16 +2,19 @@
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 400;
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 body {
-  font-size: 1.2rem;
-  @include desktop {
-    font-size: 1.5rem;
-  }
-  @include desktop {
-    font-size: 1.2rem;
-  }
+  // font-size: 1.2em;
+  // @include desktop {
+  //   font-size: 1.5rem;
+  // }
+  // @include desktop {
+  //   font-size: 1.2rem;
+  // }
   @include desktop-l {
     max-width: 1440px;
     margin: auto;

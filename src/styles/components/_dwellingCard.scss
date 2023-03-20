@@ -14,7 +14,7 @@
   }
   @include desktop {
     width: 31%;
-    height: 17rem;
+    height: 34rem;
     border-radius: 0.5rem;
     margin-right: $mrgn-card;
     margin-bottom: $mrgn-card;
@@ -38,7 +38,7 @@
     left: 0;
     margin: 0;
     padding: 2rem;
-    font-size: 1.8rem;
+    font-size: 18px;
     color: $color-white;
     z-index: 1;
     @include desktop {

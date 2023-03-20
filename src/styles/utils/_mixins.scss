@@ -1,7 +1,6 @@
 // RESPONSIVE MIXINS
-
-@mixin desktop-l {
-  @media screen and (min-width: 1440px) {
+@mixin tablet {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
@@ -12,17 +11,11 @@
   }
 }
 
-@mixin tablet {
-  @media screen and (min-width: 768px) {
+@mixin desktop-l {
+  @media screen and (min-width: 1440px) {
     @content;
   }
 }
-
-// @mixin tablet-s {
-//   @media screen and (min-width: 475px) {
-//     @content;
-//   }
-// }
 
 // OTHER MIXINS
 

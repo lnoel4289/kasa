@@ -19,9 +19,6 @@ header {
     height: 1.7rem;
     display: flex;
     align-items: center;
-    // @include tablet-s {
-    //   width: 14rem;
-    // }
   }
   ul {
     @include flexbox-center(space-between);

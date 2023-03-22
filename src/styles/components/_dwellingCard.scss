@@ -13,7 +13,8 @@
   }
   @include desktop {
     width: 31%;
-    height: 340px;
+    height: 23.61vw;
+    max-height: 340px;
     border-radius: 0.5rem;
     margin-right: $mrgn-card;
     margin-bottom: $mrgn-card;

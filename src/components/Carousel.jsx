@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-import Indicator from "./Indicator";
+import PictureCounter from "./PictureCounter";
 
 const Carousel = ({ pictures, title }) => {
   const [picture, setPicture] = useState(0);
   return (
     <section className="carousel">
       {<img src={`${pictures[picture]}`} alt={`${title} ${picture + 1}`} />}
-      <Indicator pictures={pictures} picture={picture} />
+      <PictureCounter pictures={pictures} picture={picture} />
       {pictures.length > 1 && (
         <div>
           <div

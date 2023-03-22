@@ -5,13 +5,10 @@ footer {
   background-color: $color-black;
   color: $color-white;
   height: 209px;
-  
-  
+  width: 100%;
   @include desktop {
     padding-bottom: 20px;
   }
-
-  width: 100%;
   svg path {
     fill: white;
   }

@@ -11,7 +11,7 @@ const Dropdown = ({ title, content }) => {
           isOpen ? setIsOpen(false) : setIsOpen(true);
         }}
       >
-        {title}
+        <h2>{title}</h2>
         <div className={isOpen ? " arrow-container arrow-container-up" : "arrow-container"}>
           <MdArrowBackIos className="arrow" />
         </div>

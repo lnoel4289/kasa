@@ -12,27 +12,45 @@
     padding: 0 1.15rem;
     position: relative;
     font-weight: 500;
+    mix-blend-mode: darken;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-black;
+      border-radius: 0.5rem;
+      opacity: 0;
+    }
     @include tablet {
       font-size: 24px;
     }
     @include desktop {
       &:hover {
         cursor: pointer;
+        &::after {
+          opacity: 0.3;
+        }
       }
     }
     h2 {
+      z-index: 1;
       font-size: 1.3rem;
       font-weight: 500;
     }
     .arrow-container {
+      z-index: 1;
       height: 100%;
       &-up {
         transform: rotate(180deg);
       }
       .arrow {
-        transform: rotate(-90deg);
         height: 1.9rem;
         width: 1.9rem;
+        transform: rotate(-90deg);
+        transition: transform 150ms;
       }
     }
   }

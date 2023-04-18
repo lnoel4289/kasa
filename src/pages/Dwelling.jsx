@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 const Dwelling = () => {
   const { id } = useParams();
   const dwelling = dwellings.find((elem) => elem.id === id);
-  const {title, location, tags, pictures, rating, host} = dwelling;
+  const {title, location, tags, pictures, rating, host, description, equipments} = dwelling;
 
   return !dwelling ? (
     <Navigate to="/error" />
@@ -29,13 +29,13 @@ const Dwelling = () => {
         <section className="dwelling__dropdowns">
           <Dropdown
             title="Description"
-            content={<p>{dwelling.description}</p>}
+            content={<p>{description}</p>}
           />
           <Dropdown
             title="Équipements"
             content={
               <ul>
-                {dwelling.equipments.map((eq, index) => {
+                {equipments.map((eq, index) => {
                   return <li key={`${index}${eq}`}>{eq}</li>;
                 })}
               </ul>

@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 const Dwelling = () => {
   const { id } = useParams();
   const dwelling = dwellings.find((elem) => elem.id === id);
+  const {title, location, tags, pictures, rating, host} = dwelling;
 
   return !dwelling ? (
     <Navigate to="/error" />
@@ -17,13 +18,13 @@ const Dwelling = () => {
     <>
       <Header />
       <article className="dwelling">
-        <Carousel pictures={dwelling.pictures} title={dwelling.title} />
+        <Carousel pictures={pictures} title={title} />
         <Presentation
-          title={dwelling.title}
-          location={dwelling.location}
-          tags={dwelling.tags}
-          rating={dwelling.rating}
-          host={dwelling.host}
+          title={title}
+          location={location}
+          tags={tags}
+          rating={rating}
+          host={host}
         />
         <section className="dwelling__dropdowns">
           <Dropdown

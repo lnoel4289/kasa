@@ -1,4 +1,4 @@
-import React, { Component, /*useState*/ } from "react";
+import { Component, /*useState*/ } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import PictureCounter from "./PictureCounter";
 

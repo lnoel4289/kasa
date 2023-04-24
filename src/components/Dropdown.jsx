@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MdArrowBackIos } from "react-icons/md";
 
 const Dropdown = ({ title, content }) => {

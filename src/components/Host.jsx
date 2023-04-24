@@ -1,5 +1,3 @@
-import React from "react";
-
 const Host = ({ name, imgUrl }) => {
   return (
     <div className="host">

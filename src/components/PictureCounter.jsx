@@ -1,5 +1,3 @@
-import React from "react";
-
 const PictureCounter = ({ pictures, picture }) => {
   return (
     <div className="PictureCounter">

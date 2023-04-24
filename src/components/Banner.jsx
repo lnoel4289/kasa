@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = ({ heading, imageURL, altTxt }) => {
   return (
     <section className="banner">

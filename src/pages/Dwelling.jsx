@@ -5,11 +5,22 @@ import dwellings from "../data/dwellings";
 import Presentation from "../components/Presentation";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 const Dwelling = () => {
+  useScrollToTop();
   const { id } = useParams();
   const dwelling = dwellings.find((elem) => elem.id === id);
-  const {title, location, tags, pictures, rating, host, description, equipments} = dwelling;
+  const {
+    title,
+    location,
+    tags,
+    pictures,
+    rating,
+    host,
+    description,
+    equipments,
+  } = dwelling;
 
   return !dwelling ? (
     <Navigate to="/error" />
@@ -26,10 +37,7 @@ const Dwelling = () => {
           host={host}
         />
         <section className="dwelling__dropdowns">
-          <Dropdown
-            title="Description"
-            content={<p>{description}</p>}
-          />
+          <Dropdown title="Description" content={<p>{description}</p>} />
           <Dropdown
             title="Équipements"
             content={

@@ -1,4 +1,4 @@
-import React from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -38,9 +38,9 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} basename={process.env.PUBLIC_URL}/>
-  </React.StrictMode>
+  <StrictMode>
+    <RouterProvider router={router} basename={process.env.PUBLIC_URL} />
+  </StrictMode>
 );
 
 reportWebVitals(console.log);

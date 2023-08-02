@@ -13,7 +13,7 @@ const Error = () => {
         <h1>404</h1>
         <p>Oups! La page que vous demandez n'existe pas.</p>
         <div className="to-homepage">
-          <Link to="/">Retourner sur la page d'accueil</Link>
+          <Link to="/kasa">Retourner sur la page d'accueil</Link>
         </div>
       </section>
       <Footer />

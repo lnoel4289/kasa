@@ -11,6 +11,11 @@ const Dwelling = () => {
   useScrollToTop();
   const { id } = useParams();
   const dwelling = dwellings.find((elem) => elem.id === id);
+
+  if (!dwelling) {
+    return <Navigate to="kasa/error" />;
+  }
+  
   const {
     title,
     location,
@@ -22,9 +27,7 @@ const Dwelling = () => {
     equipments,
   } = dwelling;
 
-  return !dwelling ? (
-    <Navigate to="/error" />
-  ) : (
+  return (
     <>
       <Header />
       <article className="dwelling">

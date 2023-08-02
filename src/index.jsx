@@ -17,24 +17,24 @@ const basename = `${process.env.PUBLIC_URL}/Kasa`
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kasa",
     element: <Home />,
   },
   {
-    path: "about",
+    path: "kasa/about",
     element: <About />,
   },
   {
-    path: "dwelling/:id",
+    path: "kasa/dwelling/:id",
     element: <Dwelling />,
   },
   {
-    path: `error`,
+    path: "kasa/error",
     element: <Error />,
   },
   {
     path: "*",
-    element: <Navigate to="/error" />,
+    element: <Navigate to="kasa/error" />,
   },
 ]);
 

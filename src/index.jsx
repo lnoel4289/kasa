@@ -13,6 +13,8 @@ import "./styles/normalize.css";
 import "./styles/index.scss";
 import reportWebVitals from "./reportWebVitals";
 
+const basename = `${process.env.PUBLIC_URL}/Kasa`
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
     element: <Dwelling />,
   },
   {
-    path: "error",
+    path: `error`,
     element: <Error />,
   },
   {
@@ -39,7 +41,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
-    <RouterProvider router={router} basename={process.env.PUBLIC_URL} />
+    <RouterProvider router={router} basename={basename} />
   </StrictMode>
 );
 
